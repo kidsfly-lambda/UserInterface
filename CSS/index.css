@@ -1317,48 +1317,33 @@ button:disabled,
   margin: 0 0 2em 0;
 }
 
-.features article {
-  padding: 1.75em 1.75em 0.1em 1.75em;
-  background-color: #353849;
+.features button {
+  padding: 0;
+  background-color: #29b827;
   border-radius: 5px;
-  margin: 1.5em 3em 1.5em 0;
+  margin: 0 auto;
   width: calc(50% - 1.5em);
 }
 
-.features article:nth-child(2n) {
+.features button:nth-child(2n) {
   margin-right: 0;
 }
 
-.features article .image {
-  border-radius: 5px 5px 0 0;
-  display: block;
-  margin-bottom: 1.75em;
-  margin-left: -1.75em;
-  margin-top: -1.75em;
-  position: relative;
-  width: calc(100% + 3.5em);
-}
-
-.features article .image img {
-  border-radius: 5px 5px 0 0;
-  width: 100%;
-}
-
 @media screen and (max-width: 980px) {
-  .features article {
+  .features button {
     margin: 1em 2em 1em 0;
     width: calc(50% - 1em);
   }
 }
 
 @media screen and (max-width: 736px) {
-  .features article {
-    padding: 1.5em 1.5em 0.1em 1.5em;
+  .features button {
+    padding: 0;
     margin: 0.875em 1.75em 0.875em 0;
     width: calc(50% - 0.875em - 1px);
   }
 
-  .features article .image {
+  .features button .image {
     margin-bottom: 1.5em;
     margin-left: -1.5em;
     margin-top: -1.5em;
@@ -1371,7 +1356,7 @@ button:disabled,
     display: block;
   }
 
-  .features article {
+  .features button {
     width: 100%;
     margin: 0 0 2em 0 !important;
   }
@@ -1870,7 +1855,7 @@ header.alt h1 {
 .wrapper.spotlight .image {
   border-radius: 100%;
   margin: 0 3em 2em 0;
-  width: 22em;
+  width: 300px;
   overflow: hidden;
   -ms-flex: 1;
 }
@@ -1882,6 +1867,7 @@ header.alt h1 {
 
 .wrapper.spotlight .content {
   width: 100%;
+  padding: 20px;
   -ms-flex: 2;
 }
 
@@ -2086,12 +2072,8 @@ header.alt h1 {
   width: 100%;
 }
 
-#footer .inner form {
-  margin: 0 3em 0 0;
-  width: calc(50% - 1.5em);
-}
-
 #footer .inner .contact {
+  list-style: none;
   width: calc(50% - 1.5em);
 }
 
@@ -2112,6 +2094,7 @@ header.alt h1 {
   margin-left: 1em;
   padding: 0;
   padding-left: 1em;
+  list-style: none;
 }
 
 #footer .inner .copyright li:first-child {
