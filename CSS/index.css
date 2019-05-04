@@ -1377,9 +1377,9 @@ header {
 }
 
 header h1 {
+  float: left;
   border-bottom: 0;
   font-size: 0.8em;
-  margin-bottom: 0;
   opacity: 1;
   visibility: visible;
 }
